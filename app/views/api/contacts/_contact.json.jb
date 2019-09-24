@@ -1,0 +1,15 @@
+{
+  id:           contact.id,
+  first_name:   contact.first_name,
+  middle_name:  contact.middle_name,
+  last_name:    contact.last_name,
+  full_name:    contact.full_name,
+  email:        contact.email,
+  phone_number: contact.phone_number,
+  address:      contact.address,
+  formatted: {
+              friendly_updated_at: contact.friendly_updated_at
+              },
+  user_id:      contact.user_id,
+  group:        contact.group
+}
