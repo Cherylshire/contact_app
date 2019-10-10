@@ -73,7 +73,8 @@ class Api::ContactsController < ApplicationController
                           bio: params[:bio],
                           formatted: {
                                      friendly_updated_at: params[:friendly_updated_at]
-                                      }
+                                      },
+                          group: params[:group]
                           )
     @contact.save
     render 'show.json.jb'
@@ -91,6 +92,7 @@ class Api::ContactsController < ApplicationController
     @contact.last_name = params[:last_name] || @contact.last_name
     @contact.email = params[:email] || @contact.email
     @contact.address = params[:address] || @contact.address
+    @contact.group = params[:group] || @contact.group
 
     @contact.save
     render 'show.json.jb'

@@ -11,5 +11,5 @@
               friendly_updated_at: contact.friendly_updated_at
               },
   user_id:      contact.user_id,
-  group:        contact.group
+  groups:        contact.groups
 }
